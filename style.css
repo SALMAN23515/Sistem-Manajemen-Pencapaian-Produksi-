@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+  }
+  
+  .container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  h1 {
+    font-size: 2.5em;
+    color: #00bcd4;
+  }
+  
+  h2 {
+    color: #00bcd4;
+  }
+  
+  .input-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    transition: all 0.5s ease-in-out; /* Smooth scroll effect */
+  }
+  
+  input, select {
+    padding: 10px;
+    margin: 5px 0;
+    width: 250px;
+    border: 2px solid #00bcd4;
+    background-color: #1e1e1e;
+    color: #fff;
+    border-radius: 5px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #00bcd4;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0097a7;
+  }
+  
+  .production-section {
+    margin-top: 20px;
+  }
+  
+  .summary-section {
+    margin-top: 30px;
+    text-align: center;
+  }
+  
+  #chart {
+    max-width: 100%;
+    height: 400px;
+  }
+  
+  #analysis {
+    font-size: 1.2em;
+    color: #ffeb3b;
+  }
+  
+  .data-section {
+    margin-top: 30px;
+    text-align: center;
+  }
+  
+  table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #00bcd4;
+  }
+  
+  th {
+    background-color: #1e1e1e;
+    color: #00bcd4;
+  }
+  
+  td {
+    background-color: #2a2a2a;
+    color: #fff;
+  }
+  
+  button.edit-btn {
+    padding: 5px 10px;
+    background-color: #ff9800;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button.delete-btn {
+    padding: 5px 10px;
+    background-color: #f44336;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button.edit-btn:hover {
+    background-color: #e65100;
+  }
+  
+  button.delete-btn:hover {
+    background-color: #d32f2f;
+  }
+  

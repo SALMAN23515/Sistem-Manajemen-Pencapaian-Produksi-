@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistem Manajemen Pencapaian Produksi</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Sistem Manajemen Pencapaian Produksi</h1>
+    </header>
+    
+    <section class="input-section" id="input-section">
+      <label for="month">Bulan Produksi:</label>
+      <select id="month" onchange="enableInputs()">
+        <option value="">Pilih Bulan</option>
+        <option value="Januari">Januari</option>
+        <option value="Februari">Februari</option>
+        <option value="Maret">Maret</option>
+        <option value="April">April</option>
+        <option value="Mei">Mei</option>
+        <option value="Juni">Juni</option>
+        <option value="Juli">Juli</option>
+        <option value="Agustus">Agustus</option>
+        <option value="September">September</option>
+        <option value="Oktober">Oktober</option>
+        <option value="November">November</option>
+        <option value="Desember">Desember</option>
+      </select>
+      
+      <label for="target">Target Produksi Bulanan (Barrel):</label>
+      <input type="number" id="target" placeholder="Masukkan target produksi" disabled>
+      
+      <label for="production">Pencapaian Produksi (Barrel):</label>
+      <input type="number" id="production" placeholder="Masukkan pencapaian produksi" disabled>
+      
+      <button onclick="addProductionData()" id="add-btn" disabled>Tambah Data Produksi</button>
+    </section>
+
+    <section class="production-section">
+      <h2>Pencapaian Produksi</h2>
+      <canvas id="chart"></canvas>
+    </section>
+
+    <section class="summary-section">
+      <h2>Analisis Pencapaian</h2>
+      <p id="analysis"></p>
+      <div id="warning" style="color: red; font-weight: bold; display: none;">Peringatan: Ada bulan yang pencapaiannya belum tercapai!</div>
+    </section>
+
+    <section class="data-section">
+      <h2>Data Produksi</h2>
+      <table id="data-table">
+        <thead>
+          <tr>
+            <th>Bulan</th>
+            <th>Pencapaian Produksi (Barrel)</th>
+            <th>Aksi</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Data produksi akan muncul di sini -->
+        </tbody>
+      </table>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
